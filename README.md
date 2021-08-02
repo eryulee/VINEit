@@ -72,9 +72,9 @@ https://spoonacular.com/food-api/docs
 | handle form submission | H | 3hrs | hrs | hrs |
 | styling the background | L | 3hrs | hrs | hrs |
 | styling the text | L | 2hrs | hrs | hrs |
-| styling card using flexbox | H | 3 hrs | hrs | hrs |
-| media query for desktop | H | 3 hrs | hrs | hrs |
-| PMVP basic error handling | L | 3 hrs | hrs | hrs |
+| styling card using flexbox | H | 3hrs | hrs | hrs |
+| media query for desktop | H | 3hrs | hrs | hrs |
+| PMVP basic error handling | L | 3hrs | hrs | hrs |
 | PMVP Hamburger menu | L | 3hrs | hrs | hrs |
 | Total | H | 44hrs| hrs | hrs |
 
