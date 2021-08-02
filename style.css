@@ -1,0 +1,42 @@
+header {
+  background-color: bisque;
+  text-align: center;
+}
+
+
+.wine-search-box {
+  background-color:darksalmon;
+  align-items: stretch;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+#select-wine {
+  width: 75%;
+  border-radius: 5px;
+  
+}
+
+button {
+  width: 25%;
+  border-radius: 5px;
+  
+}
+
+#wine-results {
+  background-color:darkkhaki;
+}
+
+.wine-item {
+  border-radius: 5px;
+  box-shadow:darkblue;
+  margin: 10px;
+  text-align: center;
+}
+
+.wine-img {
+  text-align: center;
+  display: block;
+  width: 100%;
+}

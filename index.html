@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script defer src="./app.js"></script>
+  <title>VINEIT</title>
+</head>
+
+<body>
+  <header>
+    <img src="IMG_0752.jpg" alt="header-logo">
+  </header>
+
+  <div class = "wine-search-box">
+    <h1>SIP BACK & RELAX <br> let VINEit guide your <br> wine selection</h1>
+    <form>
+      <select id="select-wine">
+        <option value="white wine">white wine</option>
+        <option value="red wine">red wine</option>
+        <option value="dessert wine">dessert wine</option>
+        <option value="rose wine">rose wine</option>
+        <option value="sparkling wine">sparkling wine</option>
+        <option value="sherry">sherry</option>
+        <option value="vermouth">vermouth</option>
+        <option value="fruit wine">fruit wine</option>
+        <option value="mead">mead</option>
+      </select>
+      <button>Get Results</button>
+    </form>
+  </div>
+
+  <div id = "wine-results">
+    <!-- each wine-item -->
+      <div class= "wine-item">
+
+        <div class= "wine-img">
+          <img src="" alt="drink-img">
+        </div>
+
+        <div class= "wine-name">
+          <h4>Name of Wine</h4>
+         </div>
+
+         <div class= "wine-rating">
+          <h4>Average Rating</h4>
+         </div>
+
+         <div class= "wine-price">
+          <h5>$ Price of Wine $</h5>
+        </div>
+
+        <div class= "wine-description">
+          <p>Wine description goes here </p>
+        </div>
+    
+       </div>
+    <!-- end wine-item -->
+       
+
+
+  </div>
+  
+  
+  
+</body>
+</html>
