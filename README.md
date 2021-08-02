@@ -24,7 +24,7 @@ https://spoonacular.com/food-api/docs
             "score": 0.7975,
             "link": "https://click.linksynergy.com/deeplink?id=*QCiIS6t4gA&mid=2025&murl=https%3A%2F%2Fwww.wine.com%2Fproduct%2Fsanta-ema-reserve-chardonnay-2014%2F153496"
         },
-        ```json
+```
 
 ## Wireframes
 
@@ -34,10 +34,10 @@ https://spoonacular.com/food-api/docs
 
 ### MVP/PostMVP
 - Remove previous search data when new search is made
-- Style with flexbox
-- Use Axios to make a request to an external data source and insert some of the retrieved data on to the DOM
--Implement responsive design using one media query/breakpoint
--add header and footer logo images
+- Style the card flexbox
+- Search wines to make a request to an external data source and insert some of the retrieved data on to the DOM
+- Render image, price, and rating using one media query/breakpoint
+- add header and footer logo images
 
 #### PostMVP  
 - Add basic error handling
@@ -59,21 +59,27 @@ https://spoonacular.com/food-api/docs
 [priority matrix] (https://miro.com/app/board/o9J_l4M7rVQ=/)
 
 ## Timeframes
-
-Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
-
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
-
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
-| Researching API's | H |  3 hrs | 3 hrs | 3 hrs |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| html/css structure | H | 3hrs|  | 2.5hrs |
-| JS | H | 10 hrs |.    |        |
-| CSS styling | L | 15 hrs |.    |.         |
-| Flexbox/media query | 8 hrs |.      |         |
-| PMVP | 8 hrs |.     |.       |
+| --- | :---: |  :---: | :---: | :---: |
+| Researching API | H | 3hrs| hrs | hrs |
+| Adding Form | H | 3hrs | hrs | hrs |
+| Styling the header | L | 3hrs | hrs | hrs |
+| html structure | H | 3hrs| hrs | hrs |
+| css structure | H | 3hrs | hrs | hrs |
+| Psuedo code JS | H | 3hrs | hrs | hrs |
+| Acutal code JS | H | 3hrs | hrs | hrs |
+| Adding dropdown menu | H | 3hrs | hrs | hrs |
+| handle form submission | H | 3hrs | hrs | hrs |
+| styling the background | L | 3hrs | hrs | hrs |
+| styling the text | L | 2hrs | hrs | hrs |
+| styling card using flexbox | H | 3 hrs | hrs | hrs |
+| media query for desktop | H | 3 hrs | hrs | hrs |
+| PMVP basic error handling | L | 3 hrs | hrs | hrs |
+| PMVP Hamburger menu | L | 3hrs | hrs | hrs |
+| Total | H | 44hrs| hrs | hrs |
 
-| Total | H | 48hrs|  |  |
+
+
 
 ## Code Snippet
 
