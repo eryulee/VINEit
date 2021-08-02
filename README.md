@@ -68,10 +68,12 @@ https://spoonacular.com/food-api/docs
 | css structure | H | 3hrs | hrs | hrs |
 | Psuedo code JS | H | 3hrs | hrs | hrs |
 | Acutal code JS | H | 3hrs | hrs | hrs |
+| Create array for wine list | H | 2hrs | hrs | hrs |
 | Adding dropdown menu | H | 3hrs | hrs | hrs |
 | handle form submission | H | 3hrs | hrs | hrs |
 | styling the background | L | 3hrs | hrs | hrs |
 | styling the text | L | 2hrs | hrs | hrs |
+| remove previous search data | H | 3hrs | hrs | hrs |
 | styling card using flexbox | H | 3hrs | hrs | hrs |
 | media query for desktop | H | 3hrs | hrs | hrs |
 | PMVP basic error handling | L | 3hrs | hrs | hrs |
