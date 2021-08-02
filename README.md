@@ -78,7 +78,7 @@ https://spoonacular.com/food-api/docs
 | media query for desktop | H | 3hrs | hrs | hrs |
 | PMVP basic error handling | L | 3hrs | hrs | hrs |
 | PMVP Hamburger menu | L | 3hrs | hrs | hrs |
-| Total | H | 44hrs| hrs | hrs |
+| Total | H | 49hrs| hrs | hrs |
 
 
 
