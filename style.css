@@ -1,3 +1,7 @@
+
+
+
+
 /* header {
   background-color:#ffffff;
   text-align: center;
@@ -9,23 +13,29 @@
   
 } */
 
-.wine-search-box {
-  box-shadow: 2px 0px 1px 3px #dedede;
-  border-style: solid #97979f;
-  border
-}
+/* .wine-search-box { */
+  /* box-shadow: 2px 0px 1px 3px #dedede; */
+  /* border-style: solid #97979f; */
+  /* display: flex; */
+
+  
+/* } */
 
 #headerLogo {
-  margin-top: -300px;
+ 
+  /* margin-top: -300px;
   margin-bottom: 280px;
-  margin-left: 25px;
+  margin-left: 25px; */
 }
 
 
 #bckgroundImg {
+  /* display: flex;
+  justify-content: space-around;
+  align-items: flex-start; */
   box-shadow: 2px 0px 1px 3px #dedede;
-  margin-top: 20px;
-  margin-left: 30px;
+  /* margin-top: 20px;
+  margin-left: 30px; */
   /* position: relative; */
 }
 
@@ -38,18 +48,18 @@
 } */
 
 
-form {
-  align-items: stretch;
+/* form { */
+  /* align-items: stretch;
   width: 500px;
   height: 400px;
   border-width: 50px;
   margin-top: -75px;
   text-align: right;
   margin-left: 500px;
+   */
   
   
-  
-}
+/* } */
 
 
 
@@ -66,14 +76,14 @@ form {
 }
 
 h1 {
-  display: flex;
-  margin-top: -290px;
+  /* display: flex;
+   margin-top: -290px;
   margin-left: 580px;
   margin-bottom: 100px;
   margin-right: 100px;
-  color: #847d7f;
-  font-family:'Titillium Web', serif;
-  font-size: 25px;
+  color: #847d7f; */
+  font-family:'Titillium Web', serif; 
+  font-size: 25px; 
   
   
   
@@ -86,54 +96,57 @@ bckgroundImg {
   height: 200px;
   opacity: 75%; */
   
-}
+/* } */
 
 
 
 .wine-search-box {
-  background-color:#dedede;
-  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: flex-end */
+  
+  /* align-items: stretch;
   /* margin: 0 auto; */
-  text-align: center;
-  height: 200px;
- 
+  /* text-align: center;
+  height: 200px; 
+  */
   
   
 
 }
 
 
-
+/* 
 #wine-search {
   width: 35%;
-  border-radius: 5px;
+  border-radius: 5px; */
   
 }
 
 
 
-#wine-results {
-  background-color:rgb(207, 205, 177);
+/* #wine-results {
+  background-color:rgb(207, 205, 177); */
 }
 
-.wine-item {
+/* .wine-item {
   
  padding-top: 50px;
   margin: 10px;
-  text-align: center;
+  text-align: center; */
 }
 
-.wine-img {
+/* .wine-img {
   text-align: center;
   display: block;
   width: 100%;
-}
-
+} */
+/* 
 #wine-results {
   width: 50%;
   height: 500px;
   border-radius: 30px;
-  box-shadow: 0 5px 10px 2px grey;
+  box-shadow: 0 5px 10px 2px grey; */
 }
 
 footer {
@@ -144,6 +157,8 @@ footer {
   margin-right: auto;
   display: block;
   background-color: #d9d9d9;
+  padding-right: 30px;
+  padding-top: 8px;
 }
 img[alt="footer logo"] {
   filter: invert(1);

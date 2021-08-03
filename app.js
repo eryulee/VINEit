@@ -54,11 +54,12 @@ const getWineType = async () => {
     // const wineSearchValue = document.querySelector('#select-wine').value
     // console.log(wineSearchValue)
     // const wineURL = `https://api.spoonacular.com/food/wine/recommendation?wine=${wineType}&number=10&apiKey=621f424e835c4c40b570dcf2b35d8828`
-    const wineURL = `${DOMAIN}?wine=${wineType}&number=10&apiKey=${API_KEY}`
+    const inputValue = document.querySelector('select').value
+    const wineURL = `${DOMAIN}?wine=${inputValue}&number=10&apiKey=${API_KEY}`
     const response = await axios.get(wineURL)
     console.log(response.data.recommendedWines)
   removeElement(mainData)
-     renderList(recommendedWines)
+     renderList(response.data.recommendedWines)
 
 
     // return response
@@ -72,8 +73,7 @@ console.log(getResults)
 
 form.addEventListener('submit', (e) => {
   e.preventDefault()
-  const inputValue = document.querySelector('select').value
-  console.log(inputValue)
+  // console.log(inputValue)
   getWineType()
  
   
