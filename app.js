@@ -1,3 +1,29 @@
+let recommendedWines = [
+  {
+      "id": 447938,
+      "title": "Rombauer Merlot",
+      "averageRating": 0.96,
+      "description": "Enticing and lively red color; beautifully aromatic with black cherry and ripe plum. On the palate a purity of blackcurrant, cedar and mint flavors blend together seamlessly. Soft and supple, this wine has a medium-bodied mouth-feel with plush tannins that integrate with the generous finish.Our favorite pairings for this wine include chicken parmesan, cedar-planked salmon over wild rice, and mushroom pizza.",
+      "imageUrl": "https://spoonacular.com/productImages/447938-312x231.jpg",
+      "link": "https://click.linksynergy.com/deeplink?id=*QCiIS6t4gA&mid=2025&murl=https%3A%2F%2Fwww.wine.com%2Fproduct%2Frombauer-merlot-2008%2F116883",
+      "price": "$25.59",
+      "ratingCount": 5.0,
+      "score": 0.8975
+  },
+  {
+      "id": 430475,
+      "title": "NV The Big Kahuna Merlot",
+      "averageRating": 0.9,
+      "description": "A ripe and rounded Merlot with notes of plum, blackberry, and hint of spice.",
+      "imageUrl": "https://spoonacular.com/productImages/430475-312x231.jpg",
+      "link": "https://www.amazon.com/Big-Kahuna-Merlot-Red-Wine/dp/B01F5XPTUW?tag=spoonacular-20",
+      "price": "$6.99",
+      "ratingCount": 4.0,
+      "score": 0.823076923076923
+  }
+]
+
+
 const DOMAIN = 'https://api.spoonacular.com/food/wine/recommendation'
 const API_KEY = 'e804b9f68f3945eb901463f2b88baf78'
 // const BASE_URL = `${DOMAIN}?apikey=${API_KEY}&`
@@ -10,120 +36,91 @@ const API_KEY = 'e804b9f68f3945eb901463f2b88baf78'
 
 const selectTag = document.querySelector('#select-wine')
 const form = document.querySelector('form')
-const dataContainer = document.querySelector('#wine-results')
-const searchButton = document.querySelector('#button1')
+
+
+
 const getResults = document.querySelector('#button2')
+const mainData = document.querySelector('main')
+// console.log(mainData)
 
 // console.log(form)
 // console.log(button)
 
 
-const getAllWines = async () => {
-  try {
-    
-    const wineSearchValue = document.querySelector('#wine-search').value
+const getWineType = async () => {
+  // try {
+    // let wineType = 'cabernet sauvignon'
+    // const wineSearchValue = document.querySelector('#select-wine').value
     // console.log(wineSearchValue)
     // const wineURL = `https://api.spoonacular.com/food/wine/recommendation?wine=${wineType}&number=10&apiKey=e804b9f68f3945eb901463f2b88baf78`
-    const wineURL = `${DOMAIN}?wine=${wineSearchValue}&number=10&apiKey=${API_KEY}`
-    const response = await axios.get(wineURL)
+    // const wineURL = `${DOMAIN}?wine=${wineSearchValue}&number=10&apiKey=${API_KEY}`
+    // const response = await axios.get(wineURL)
     // console.log(response.data.recommendedWines)
-      
-    const wineList = Object.keys(response.data.recommendedWines)
-
-    return wineList
-  } catch (error) {
-    console.error(error)
-  }
-}
-searchButton.addEventListener('click', (e) => {
-  e.preventDefault()
-  getAllWines() 
-})
-
-const getWineType = async () => {
-  try {
-    // let wineType = 'cabernet sauvignon'
-    const wineSearchValue = document.querySelector('#select-wine').value
-    console.log(wineSearchValue)
-    // const wineURL = `https://api.spoonacular.com/food/wine/recommendation?wine=${wineType}&number=10&apiKey=e804b9f68f3945eb901463f2b88baf78`
-    const wineURL = `${DOMAIN}?wine=${wineSearchValue}&number=10&apiKey=${API_KEY}`
-    const response = await axios.get(wineURL)
-    console.log(response.data.recommendedWines)
-      // .then(res => {
-      //   console.log(res.data)
-      // })
+  removeElement(mainData)
+     renderList(recommendedWines)
 
 
-    // console.log(responseObject)
-    // object.keys returns an array from winerecommendations list in API Docs
-    // const wineList = Object.keys(response.data.message)
-    // console.log(wineList)
-
-    return response
+    // return response
     // return wineList
-  } catch (error) {
-    console.error(error)
+  // } catch (error) {
+  //   console.error(error)
   }
-}
-getResults.addEventListener('click', (e) => {
+
+// }
+console.log(getResults)
+
+form.addEventListener('submit', (e) => {
   e.preventDefault()
+  const inputValue = document.querySelector('select').value
+  console.log(inputValue)
   getWineType()
  
   
 })
 
 function renderList(wineList) {
-  console.log(wineList)
+  // console.log(`this is the wine list`, wineList)
   
-  let section = document.querySelector('wineItems')
+  
   wineList.forEach((wine) => {
-    let wineStats = document.createElement('div')
-    section.append(wineStats)
+    console.log(wine.score)
+    
 
     //wine name
     let wineTitle = document.createElement('h2')
-    wineTitle.textContent = `${data.recommendedWines.title}`
-    wineStats.append(wineTitle)
+    wineTitle.textContent = wine.title
+    mainData.append(wineTitle)
 
-    //wine Image
+  //   //wine Image
 
     let wineImg = document.createElement('img')
-    wineImg.src = `${data.recommendedWines.title}`
-    wineStats.append(wineTitle)
+    wineImg.src = wine.imageUrl
+    mainData.append(wineImg)
 
-    //wine score
+  //   //wine score
     let wineScore = document.createElement('h3')
-    wineScore.textContent = `${data.recommendedWines.score}`
-    wineStats.append(wineScore)
+    wineScore.textContent= `wine score: ${wine.score}`
+    mainData.append(wineScore)
 
-    //wine description
+  //   //wine description
     let wineDesc = document.createElement('p')
-    wineDesc.textContent = `${data.recommendedWines.description}`
-    wineStats.append(wineDesc)
+    wineDesc.textContent = wine.description
+    mainData.append(wineDesc)
 
-    // wine price
+  //   // wine price
     let winePrice = document.createElement('h5')
-    winePrice.textContent = `${data.recommendedWines.price}`
-    wineStats.append(winePrice)
+    winePrice.textContent = wine.price
+    mainData.append(winePrice)
     })
 
 }
 
-// render wine Data
-
-const getData = async () => {
-  try {
-    const wineInput =
-      document.querySelector('input').value
-    console.log(wineInput)
-    const data = await axios.get(`https://api.spoonacular.com/food/wine/recommendation?wine=${wineInput}&number=10&apiKey=e804b9f68f3945eb901463f2b88baf78`)
-    console.log(data.data)
-    return data
-    
-  } catch (err) {
-    console.error(err)
+function removeElement(element) {
+  while (element.lastChild) {
+    element.removeChild(element.lastChild)
   }
 }
+
 
 
 
