@@ -96,18 +96,19 @@ wineImg {
   
   box-shadow: 2px 0px 1px 3px #dedede;
   margin-top: 0;
+  border-radius: 45px;
 }
 
 
 
 #button2 {
-  border-radius: 5px;
+  border-radius: 10px;
   width: 100px;
   height: 30px;
 }
 
 #select-wine {
-  border-radius: 5px;
+  border-radius: 10px;
   width: 200px;
   height: 30px;
 }
@@ -148,14 +149,14 @@ main {
 
 /* #wine-results {
   background-color:rgb(207, 205, 177); */
-}
+/* } */
 
 /* .wine-item {
   
  padding-top: 50px;
   margin: 10px;
   text-align: center; */
-}
+/* } */
 
 /* .wine-img {
   text-align: center;
@@ -168,22 +169,33 @@ main {
   height: 500px;
   border-radius: 30px;
   box-shadow: 0 5px 10px 2px grey; */
+/* } */
+
+
+/* img[alt="footer logo"] {
+   filter: invert(1); 
+  
+  
+  
 }
 
 footer {
   position: relative;
-  height: 40px;
-  text-align: center;
-  margin-top: px;
-  margin-right: auto;
-  display: block;
-  background-color: #d9d9d9;
-  padding-right: 30px;
-  padding-top: 0px;
-}
-img[alt="footer logo"] {
-  filter: invert(1);
-}
+  /* height: 40px; */
+  /* text-align: center; */
+  /* margin-top: px; */
+  /* margin-right: auto;
+  display: block; */
+  
+  /* background-color: #f2f2f2;
+  margin-top: -55px; 
+  height: 20px;
+  padding-bottom: 100px; */ 
+   
+  /* padding-right: 30px; */
+  /* padding-top: 0px; */
+ 
+/* } */
 
 @media only screen and (max-width: 670px) {
   #bckgroundImg {

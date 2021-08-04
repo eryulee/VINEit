@@ -25,8 +25,8 @@
 
 
 const DOMAIN = 'https://api.spoonacular.com/food/wine/recommendation'
-// const API_KEY = 'e804b9f68f3945eb901463f2b88baf78'
-const API_KEY = '621f424e835c4c40b570dcf2b35d8828'
+const API_KEY = 'e804b9f68f3945eb901463f2b88baf78'
+// const API_KEY = '621f424e835c4c40b570dcf2b35d8828'
 // const BASE_URL = `${DOMAIN}?apikey=${API_KEY}&`
 
 
