@@ -40,15 +40,11 @@ main {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-content: center;
   align-items: center;
   background-color: #eeeeee;
   /* margin: 0 25px; */
-  
-
-
-
 }
 
 main {
@@ -124,6 +120,14 @@ h1 {
   text-align: center;
   
 }
+body {
+  margin: 0 25px;
+}
+
+main {
+  /* font-size: medium; */
+  text-align: center;
+}
 
 
 
@@ -181,6 +185,16 @@ img[alt="footer logo"] {
   filter: invert(1);
 }
 
-@media only screen and (max-width: 622px) {
-  
+@media only screen and (max-width: 670px) {
+  #bckgroundImg {
+     max-width: 60%; 
+  }
+  h1 {
+    font-size: 38px;
+  }
+
+  #headerLogo {
+    width: 60%;
+  }
+
 }
