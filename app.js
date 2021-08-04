@@ -98,7 +98,7 @@ function renderList(wineList) {
 
      //wine score
      let wineScore = document.createElement('h4')
-     wineScore.textContent= `wine score: ${wine.score}`
+     wineScore.textContent= `wine score: ${wine.averageRating}`
      mainData.append(wineScore)
 
     // wine price
