@@ -88,7 +88,7 @@ function renderList(wineList) {
     
 
     //wine name
-    let wineTitle = document.createElement('h2')
+    let wineTitle = document.createElement('h3')
     wineTitle.textContent = wine.title
     mainData.append(wineTitle)
 
@@ -99,19 +99,21 @@ function renderList(wineList) {
     mainData.append(wineImg)
 
   //   //wine score
-    let wineScore = document.createElement('h3')
+    let wineScore = document.createElement('h4')
     wineScore.textContent= `wine score: ${wine.score}`
     mainData.append(wineScore)
+  
+  // wine price
+    let winePrice = document.createElement('h4')
+    winePrice.textContent = wine.price
+    mainData.append(winePrice)
 
   //   //wine description
     let wineDesc = document.createElement('p')
     wineDesc.textContent = wine.description
     mainData.append(wineDesc)
 
-  //   // wine price
-    let winePrice = document.createElement('h5')
-    winePrice.textContent = wine.price
-    mainData.append(winePrice)
+  
     })
 
 }
