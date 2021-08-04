@@ -136,7 +136,7 @@ main {
 
 
 footer {
-  font-size: 30px;
+  font-size: 27px;
   text-align: center;
   font-family:'Poppins', serif;
   color: #847d7f; 
@@ -180,5 +180,8 @@ footer {
   }
   body {
     margin: 0 25px;
+  }
+  footer {
+    font-size: 23px;
   }
 }
