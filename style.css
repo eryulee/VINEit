@@ -121,7 +121,7 @@ h1 {
   
 }
 body {
-  margin: 0 25px;
+  margin: 0 50px;
 }
 
 main {
@@ -196,5 +196,7 @@ img[alt="footer logo"] {
   #headerLogo {
     width: 60%;
   }
-
+  body {
+    margin: 0 25px;
+  }
 }
