@@ -55,7 +55,7 @@ const getWineType = async () => {
     // console.log(wineSearchValue)
     // const wineURL = `https://api.spoonacular.com/food/wine/recommendation?wine=${wineType}&number=10&apiKey=621f424e835c4c40b570dcf2b35d8828`
     const inputValue = document.querySelector('select').value
-    const wineURL = `${DOMAIN}?wine=${inputValue}&number=10&apiKey=${API_KEY}`
+    const wineURL = `${DOMAIN}?wine=${inputValue}&number=9&apiKey=${API_KEY}`
     const response = await axios.get(wineURL)
     console.log(response.data.recommendedWines)
   removeElement(mainData)
@@ -86,29 +86,27 @@ function renderList(wineList) {
   wineList.forEach((wine) => {
     console.log(wine.score)
     
-
+    //wine Image
+    let wineImg = document.createElement('img')
+    wineImg.src = wine.imageUrl
+    mainData.append(wineImg)
+  
     //wine name
     let wineTitle = document.createElement('h3')
     wineTitle.textContent = wine.title
     mainData.append(wineTitle)
 
-  //   //wine Image
+     //wine score
+     let wineScore = document.createElement('h4')
+     wineScore.textContent= `wine score: ${wine.score}`
+     mainData.append(wineScore)
 
-    let wineImg = document.createElement('img')
-    wineImg.src = wine.imageUrl
-    mainData.append(wineImg)
-
-  //   //wine score
-    let wineScore = document.createElement('h4')
-    wineScore.textContent= `wine score: ${wine.score}`
-    mainData.append(wineScore)
-  
-  // wine price
+    // wine price
     let winePrice = document.createElement('h4')
     winePrice.textContent = wine.price
     mainData.append(winePrice)
 
-  //   //wine description
+   //wine description
     let wineDesc = document.createElement('p')
     wineDesc.textContent = wine.description
     mainData.append(wineDesc)

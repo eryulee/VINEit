@@ -6,6 +6,12 @@ body {
   
 }
 
+#headerLogo {
+  text-align: center;
+  margin-top: 0px;
+  /* margin-bottom: -5px; */
+}
+
 header {
   text-align: center;
 }
@@ -27,14 +33,19 @@ header {
   justify-content: center;
   align-items: center;
   align-content: flex-start;
+  margin-bottom: 45px;
 }
 
-.flex-container4 {
+main {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-evenly;
   align-content: center;
+  align-items: center;
+  background-color: #eeeeee;
+  /* margin: 0 25px; */
+  
 
 
 
@@ -42,7 +53,37 @@ header {
 
 main {
   font-family:'Poppins', serif;
+  padding-top: 10px;
+  border-style: solid;
+  border-color: #d3d3d3;
+  border-width: thin;
+  color: #847d7f; 
+  
+  /* margin-top: 45px; */
+  
 }
+
+main, h3 {
+  font-weight: bold;
+}
+
+
+main, h4 {
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+
+main, p {
+  margin-top: 5px;
+  margin-bottom: 45px;
+}
+
+main, img {
+  box-sizing: border-box;
+  margin-top: 45px;
+}
+
+
 
 wineImg {
   width: 100%;
@@ -53,10 +94,12 @@ wineImg {
 
 
 
+
+
 #bckgroundImg {
   
   box-shadow: 2px 0px 1px 3px #dedede;
- 
+  margin-top: 0;
 }
 
 
@@ -136,4 +179,8 @@ footer {
 }
 img[alt="footer logo"] {
   filter: invert(1);
+}
+
+@media only screen and (max-width: 622px) {
+  
 }
