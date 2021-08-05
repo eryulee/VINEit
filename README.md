@@ -37,7 +37,7 @@ https://spoonacular.com/food-api/docs
 - Style the card flexbox
 - Search wines to make a request to an external data source and insert some of the retrieved data on to the DOM
 - Render image, price, and rating using one media query/breakpoint
-- add header and footer logo images
+
 
 #### PostMVP  
 - Add basic error handling
