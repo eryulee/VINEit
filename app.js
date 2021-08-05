@@ -31,7 +31,7 @@ const getWineType = async () => {
     // console.log(wineSearchValue)
     // const wineURL = `https://api.spoonacular.com/food/wine/recommendation?wine=${wineType}&number=10&apiKey=621f424e835c4c40b570dcf2b35d8828`
     const inputValue = document.querySelector('select').value
-    const wineURL = `${DOMAIN}?wine=${inputValue}&number=9&apiKey=${API_KEY}`
+    const wineURL = `${DOMAIN}?wine=${inputValue}&number=15&apiKey=${API_KEY}`
     const response = await axios.get(wineURL)
     console.log(response.data.recommendedWines)
   removeElement(mainData)
