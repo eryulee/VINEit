@@ -160,12 +160,15 @@ wineImg {
   border-radius: 10px;
   width: 100px;
   height: 30px;
+  font-family:'Poppins', serif;
 }
 
 #select-wine {
   border-radius: 10px;
   width: 200px;
   height: 30px;
+  font-family:'Poppins', serif;
+  
 }
 
 h1 {
