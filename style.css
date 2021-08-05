@@ -1,20 +1,70 @@
 body {
   margin: 0 50px;
   border-style: solid;
-  border-color: #d3d3d3;
+  border-color: #8c7d70;
   border-width: thin;
   
 }
 
-#headerLogo {
+/* https://css-tricks.com/the-trick-to-animating-the-dot-on-the-letter-i/ */
+header {
+  background-color: white;
+  font-family:'Sue Ellen Francisco', serif;
+  font-size       : 43px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 7px;
+  color: #969696; 
+}
+
+.wrapper {
+  display        : flex;
+  justify-content: space-evenly;
+  align-items    : flex-end;
+  padding        : 0.5em 1em 0.5em 1em;
+}
+
+.text {
+  margin     : 0;
+  line-height: 0.55;
+}
+
+#bounce {
+  display: inline-block;
+}
+
+.stack {
+  display: block;
+}
+
+/*  Bouncing Animation */
+
+@keyframes bounce {
+  from {
+      transform: translate3d(0, 0, 0);
+  }
+
+  to {
+      transform: translate3d(0, -10px, 0);
+  }
+}
+
+.bouncing {
+  animation                : bounce 0.4s;
+  animation-iteration-count: infinite;
+  animation-direction      : alternate;
+}
+
+
+/* #headerLogo {
   text-align: center;
   margin-top: 0px;
   /* margin-bottom: -5px; */
-}
+/* }
 
 header {
   text-align: center;
-}
+} */ 
 
 .flex-container2 {
   /* vertical-align: middle; */
@@ -182,6 +232,9 @@ footer {
   }
   h1 {
     font-size: 38px;
+  }
+  header {
+    font-size: 32px;
   }
 
   #headerLogo {
