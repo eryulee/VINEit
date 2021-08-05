@@ -17,11 +17,12 @@ header {
 }
 
 .flex-container2 {
+  /* vertical-align: middle; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  align-content: stretch;
+  align-content: stretch; 
   background-color: #eeeeee;
   border-color: #d3d3d3;
   border-radius: 20px;
@@ -36,6 +37,8 @@ header {
   align-content: flex-start;
   margin-bottom: 45px;
 }
+
+
 
 main {
   display: flex;
@@ -76,7 +79,6 @@ main, p {
 }
 
 main, img {
-  /* box-sizing: border-box; */
   margin-top: 45px;
   border-radius: 20px;
  
@@ -122,6 +124,8 @@ h1 {
   font-family:'Amatic SC', serif; 
   font-size: 50px; 
   text-align: center;
+  /* margin-left: 100px; */
+ 
   
 }
 body {
@@ -141,6 +145,11 @@ footer {
   font-family:'Poppins', serif;
   color: #847d7f; 
   
+  
+}
+
+
+
 }
 /* img[alt="footer logo"] {
    filter: invert(1); 
