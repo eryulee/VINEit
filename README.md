@@ -48,9 +48,9 @@ https://spoonacular.com/food-api/docs
 |  Day | Deliverable | Status
 |---|---| ---|
 |July 30| Prompt / Wireframes / Priority Matrix / Timeframes |complete
-|August 2| Project Approval / Core Application Structure (HTML, CSS, etc.), Pseudocode/ actual code | Incomplete
-|August 3| Css/flexbox | Incomplete
-|August 4| Initial Clickable Model/MVP  | Incomplete
+|August 2| Project Approval / Core Application Structure (HTML, CSS, etc.), Pseudocode/ actual code | complete
+|August 3| Css/flexbox | complete
+|August 4| Initial Clickable Model/MVP  | complete
 |August 5| PMVP/advanced Css | Incomplete
 |August 6| Presentations | Incomplete
 
@@ -61,24 +61,24 @@ https://spoonacular.com/food-api/docs
 ## Timeframes
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Researching API | H | 3hrs| hrs | hrs |
-| Adding Form | H | 3hrs | hrs | hrs |
-| Styling the header | L | 3hrs | hrs | hrs |
-| html structure | H | 3hrs| hrs | hrs |
-| css structure | H | 3hrs | hrs | hrs |
-| Psuedo code JS | H | 3hrs | hrs | hrs |
-| Acutal code JS | H | 3hrs | hrs | hrs |
-| Create array for wine list | H | 2hrs | hrs | hrs |
-| Adding dropdown menu | H | 3hrs | hrs | hrs |
-| handle form submission | H | 3hrs | hrs | hrs |
-| styling the background | L | 3hrs | hrs | hrs |
-| styling the text | L | 2hrs | hrs | hrs |
-| remove previous search data | H | 3hrs | hrs | hrs |
-| styling card using flexbox | H | 3hrs | hrs | hrs |
-| media query for desktop | H | 3hrs | hrs | hrs |
+| Researching API | H | 3hrs| 3hrs | 3hrs |
+| Adding Form | H | 3hrs | 2hrs | 2hrs |
+| Styling the header | L | 3hrs | 3hrs | 3hrs |
+| html structure | H | 3hrs| 1hrs | 1hrs |
+| css structure | H | 3hrs | 3hrs | 3hrs |
+| Psuedo code JS | H | 3hrs | 1hrs | 1hrs |
+| Acutal code JS | H | 3hrs | 10hrs | 10hrs |
+| Create array for wine list | H | 2hrs | 2hrs | 2hrs |
+| Adding dropdown menu | H | 3hrs | 6hrs | 6hrs |
+| handle form submission | H | 3hrs | 3hrs | 3hrs |
+| styling the background | L | 3hrs | 4hrs | 4hrs |
+| styling the text | L | 2hrs | 4hrs | 4hrs |
+| remove previous search data | H | 3hrs | 1hrs | 1hrs |
+| styling card using flexbox | H | 3hrs | 2hrs | 2hrs |
+| media query for desktop | H | 3hrs | 2hrs | 2hrs |
 | PMVP basic error handling | L | 3hrs | hrs | hrs |
 | PMVP Hamburger menu | L | 3hrs | hrs | hrs |
-| Total | H | 49hrs| hrs | hrs |
+| Total | H | 46hrs| hrs | hrs |
 
 
 
@@ -88,10 +88,14 @@ https://spoonacular.com/food-api/docs
 Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
+.bouncing {
+  animation                : bounce 0.4s;
+  animation-iteration-count: infinite;
+  animation-direction      : alternate;
 }
+
+This code snippet sets the bounce speed in css. It was my first time using animation and I found this to be really interesting and useful.
 ```
 
 ## Change Log
- Use this section to document what changes were made and the reasoning behind those changes.  
+I initially had two forms: a drop down menu and a search bar. I ended up getting rid of the text search input bar because having two forms made the app look cluttered and difficult for the user to navigate.
