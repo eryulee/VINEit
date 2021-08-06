@@ -56,25 +56,14 @@ header {
 }
 
 
-/* #headerLogo {
-  text-align: center;
-  margin-top: 0px;
-  /* margin-bottom: -5px; */
-/* }
-
-header {
-  text-align: center;
-} */ 
 
 .flex-container2 {
-  /* vertical-align: middle; */
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   align-content: stretch; 
-  /* background-color: #eeeeee; */
-
   border-color: #d3d3d3;
   border-radius: 20px;
 }
@@ -91,7 +80,7 @@ header {
 }
 
 
-
+/* data from API */
 main {
   display: flex;
   flex-direction: column;
@@ -111,15 +100,11 @@ main {
   border-color: #d3d3d3;
   border-width: thin;
   color: #847d7f; 
-  
-  /* margin-top: 45px; */
-  
 }
 
 main, h3 {
   font-weight: boldest;
 }
-
 
 main, h4 {
   margin-top: -5px;
@@ -134,7 +119,6 @@ main, p {
 main, img {
   margin-top: 45px;
   border-radius: 20px;
- 
 }
 
 
@@ -142,22 +126,14 @@ main, img {
 wineImg {
   width: 100%;
   display: block;
-
 }
 
 
-
-
-
-
 #bckgroundImg {
-  
   box-shadow: 2px 0px 1px 3px #dedede;
   margin-top: 45px;
   border-radius: 45px;
 }
-
-
 
 #button2 {
   border-radius: 10px;
@@ -175,23 +151,19 @@ wineImg {
 }
 
 h1 {
- 
   color: #847d7f; 
   font-family:'Amatic SC', serif; 
   font-size: 50px; 
   text-align: center;
-  /* margin-left: 100px; */
- 
-  
 }
+
+
 body {
   margin: 0 50px;
 }
 
 main {
-  /* font-size: medium; */
   text-align: center;
-  
 }
 
 
@@ -200,41 +172,12 @@ footer {
   text-align: center;
   font-family:'Poppins', serif;
   color: #847d7f; 
-  
-  
 }
 
-
-
-
-/* img[alt="footer logo"] {
-   filter: invert(1); 
-  
-  
-  
-}
-
-footer {
-  position: relative;
-  /* height: 40px; */
-  /* text-align: center; */
-  /* margin-top: px; */
-  /* margin-right: auto;
-  display: block; */
-  
-  /* background-color: #f2f2f2;
-  margin-top: -55px; 
-  height: 20px;
-  padding-bottom: 100px; */ 
-   
-  /* padding-right: 30px; */
-  /* padding-top: 0px; */
- 
-/* } */
 
 @media only screen and (max-width: 670px) {
   #bckgroundImg {
-     max-width: 80%; 
+     max-width: 90%; 
   }
   h1 {
     font-size: 38px;

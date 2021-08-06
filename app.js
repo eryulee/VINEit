@@ -7,10 +7,6 @@ const API_KEY = 'e804b9f68f3945eb901463f2b88baf78'
 // const BASE_URL = `${DOMAIN}?apikey=${API_KEY}&`
 
 
-
-// create dynamic dropdown menu by type of wine
-//create text search menu by wine name 
-
 // select drop down menu list and put it in a constant
 // select form and put it in a constant
 const selectTag = document.querySelector('#select-wine')
@@ -23,12 +19,9 @@ const getResults = document.querySelector('#button2')
 const mainData = document.querySelector('main')
 
 
-
+// make request
 const getWineType = async () => {
   try {
-    // let wineType = 'cabernet sauvignon'
-    // const wineSearchValue = document.querySelector('#select-wine').value
-    // console.log(wineSearchValue)
     // const wineURL = `https://api.spoonacular.com/food/wine/recommendation?wine=${wineType}&number=10&apiKey=621f424e835c4c40b570dcf2b35d8828`
     const inputValue = document.querySelector('select').value
     const wineURL = `${DOMAIN}?wine=${inputValue}&number=15&apiKey=${API_KEY}`
@@ -36,10 +29,6 @@ const getWineType = async () => {
     console.log(response.data.recommendedWines)
   removeElement(mainData)
      renderList(response.data.recommendedWines)
-
-
-    // return response
-    // return wineList
   } catch (error) {
     console.error(error)
   }
@@ -47,17 +36,16 @@ const getWineType = async () => {
 }
 console.log(getResults)
 
+// add event listener for form to work
 form.addEventListener('submit', (e) => {
   e.preventDefault()
-  // console.log(inputValue)
+
+// invoke function
   getWineType()
- 
-  
-})
+ })
+
 
 function renderList(wineList) {
-  // console.log(`this is the wine list`, wineList)
-  
   
   wineList.forEach((wine) => {
     console.log(wine.score)
