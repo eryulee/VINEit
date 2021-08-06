@@ -3,6 +3,7 @@
 ## Project Name
 VINEit
 https://github.com/eryulee/VINEit/edit/main/README.md
+https://eryulee.github.io/VINEit/
 
 ## Project Description
 
