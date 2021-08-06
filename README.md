@@ -52,7 +52,7 @@ https://spoonacular.com/food-api/docs
 |August 3| Css/flexbox | complete
 |August 4| Initial Clickable Model/MVP  | complete
 |August 5| PMVP/advanced Css | Incomplete
-|August 6| Presentations | Incomplete
+|August 6| Presentations | complete
 
 ## Priority Matrix
 
